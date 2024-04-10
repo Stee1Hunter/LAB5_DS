@@ -1,0 +1,24 @@
+﻿<Window x:Class="LAB5_DS.CarP"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB5_DS"
+        mc:Ignorable="d"
+        Title="CarP" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="CarPDrg" Margin="0,0,0,156" SelectionChanged="CarPDrg_SelectionChanged"/>
+        <Button x:Name="Dob" Content="добавить" Margin="0,407,572,0" Click="dob_Click"/>
+        <Button x:Name="Obn" Content="обновить" Margin="228,407,266,0" Click="Obn_Click"/>
+        <Button x:Name="UD" Content="удалить" Margin="534,407,0,0" Click="UD_Click"/>
+        <Button x:Name="end" Content="выход" Margin="0,380,0,32" Click="end_Click"/>
+        <TextBox x:Name="weight" Margin="0,302,572,108"/>
+        <TextBox x:Name="Namess" Margin="228,302,306,108" />
+        <TextBox x:Name="price" Margin="499,302,0,108" />
+        <ComboBox x:Name="cartype" Margin="0,331,636,81" SelectionChanged="cartype_SelectionChanged"/>
+        <ComboBox x:Name="brand" Margin="169,331,467,81" SelectionChanged="brand_SelectionChanged" />
+        <ComboBox x:Name="engine" Margin="341,331,306,81" SelectionChanged="engine_SelectionChanged"  />
+        <ComboBox x:Name="color" Margin="499,331,170,81" SelectionChanged="color_SelectionChanged"/>
+        <ComboBox x:Name="coloring" Margin="635,331,0,81" SelectionChanged="coloring_SelectionChanged"/>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="LAB5_DS.Engine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB5_DS"
+        mc:Ignorable="d"
+        Title="Engine" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="EngineDrg" SelectionChanged="EngineDrg_SelectionChanged"/>
+        <Button x:Name="Dob" Content="добавить" Margin="0,407,572,0" Click="dob_Click" Height="27" VerticalAlignment="Top"/>
+        <Button x:Name="Obn" Content="обновить" Margin="228,407,266,0" Click="Obn_Click"/>
+        <Button x:Name="UD" Content="удалить" Margin="534,407,0,0" Click="UD_Click"/>
+        <Button x:Name="end" Content="выход" Margin="0,380,0,32" Click="end_Click"/>
+        <TextBox x:Name="Cyl" Margin="10,217,622,192"/>
+        <TextBox x:Name="HP" Margin="183,217,419,192"/>
+        <TextBox x:Name="DVS" Margin="386,217,231,192" />
+        <TextBox x:Name="ECO" Margin="574,217,0,192"  />
+        <ComboBox x:Name="Engin" Margin="0,274,0,120" SelectionChanged="Engin_SelectionChanged"/>
+    </Grid>
+</Window>

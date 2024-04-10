@@ -1,0 +1,21 @@
+﻿<Window x:Class="LAB5_DS.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB5_DS"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="AdmDrg"  />
+        <Button x:Name="Vihod" Content="Выход из аккаунта" Margin="667,0,0,391" Click="Vihod_Click"/>
+        <Button x:Name="AddUser" Content="добавить пользователя" Margin="519,0,133,391" Click="AddUser_Click"/>
+        <Button x:Name="ColorDrg" Content="цвета" Margin="371,0,281,391" Click="ColorDrg_Click"/>
+        <Button x:Name="FuelDrg" Content="топливо" Margin="215,0,429,391" Click="FuelDrg_Click" />
+        <Button x:Name="ColoringDrg" Content="расцветка" Margin="0,0,585,391" Click="ColoringDrg_Click" />
+        <Button x:Name="CTDrg" Content="типмашины" Margin="0,48,585,327" Click="CTDrg_Click"/>
+        <Button x:Name="BrandDrg" Content="марка" Margin="220,48,429,327" Click="BrandDrg_Click"/>
+        <Button x:Name="Eng" Content="двигатель" Margin="376,48,281,327" Click="Eng_Click"/>
+        <Button x:Name="car" Content="мишины" Margin="524,48,10,327" Click="car_Click"/>
+    </Grid>
+</Window>

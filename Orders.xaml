@@ -1,0 +1,19 @@
+﻿<Window x:Class="LAB5_DS.Orders"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB5_DS"
+        mc:Ignorable="d"
+        Title="Orders" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="OrdersDrg" SelectionChanged="OrdersDrg_SelectionChanged"/>
+        <Button x:Name="Dob" Content="добавить" Margin="0,407,572,0" Click="dob_Click"/>
+        <Button x:Name="Obn" Content="обновить" Margin="228,407,266,0" Click="Obn_Click"/>
+        <Button x:Name="UD" Content="удалить" Margin="534,407,0,0" Click="UD_Click"/>
+        <Button x:Name="end" Content="выход" Margin="0,380,0,32" Click="end_Click"/>
+        <TextBox x:Name="OrderTb" Margin="0,283,0,123"/>
+        <ComboBox x:Name="CarCbx" Margin="0,316,400,99" SelectionChanged="CarCbx_SelectionChanged"/>
+        <ComboBox x:Name="UsersCbx" Margin="405,316,0,99" SelectionChanged="UsersCbx_SelectionChanged" />
+    </Grid>
+</Window>

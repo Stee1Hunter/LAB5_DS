@@ -1,0 +1,17 @@
+﻿<Window x:Class="LAB5_DS.Coloring"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB5_DS"
+        mc:Ignorable="d"
+        Title="Coloring" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="coloringDrg" SelectionChanged="coloringDrg_SelectionChanged"/>
+        <Button x:Name="Dob" Content="добавить" Margin="0,407,572,0" Click="Dob_Click"/>
+        <Button x:Name="Obn" Content="обновить" Margin="228,407,266,0" Click="Obn_Click"/>
+        <Button x:Name="UD" Content="удалить" Margin="534,407,0,0" Click="UD_Click"/>
+        <TextBox x:Name="colorTb" Margin="0,322,0,85"/>
+        <Button x:Name="end" Content="выход" Margin="0,380,0,32" Click="end_Click"/>
+    </Grid>
+</Window>
